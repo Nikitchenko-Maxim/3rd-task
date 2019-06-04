@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B6DE93E4-D061-419A-A365-07A80A234B5C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="maxdll.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="maxapp.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="maxdll">
+        <MSBuild Projects="maxdll.cbproj"/>
+    </Target>
+    <Target Name="maxdll:Clean">
+        <MSBuild Projects="maxdll.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="maxdll:Make">
+        <MSBuild Projects="maxdll.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="maxapp">
+        <MSBuild Projects="maxapp.cbproj"/>
+    </Target>
+    <Target Name="maxapp:Clean">
+        <MSBuild Projects="maxapp.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="maxapp:Make">
+        <MSBuild Projects="maxapp.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="maxdll;maxapp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="maxdll:Clean;maxapp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="maxdll:Make;maxapp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

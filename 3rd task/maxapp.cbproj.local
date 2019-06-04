@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.140,=C:\Users\grafn\OneDrive\Документы\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.959,C:\cpp\Max\maxapp.cbproj=C:\Users\grafn\OneDrive\Документы\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.060,=C:\Users\grafn\OneDrive\Документы\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.249,C:\cpp\Max\maxapp.h=C:\Users\grafn\OneDrive\Документы\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.356,=C:\cpp\Max\Win32\Debug\maxdll.lib</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.812,C:\cpp\Max\Win32\Debug\maxdll.lib=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.841,C:\cpp\Max\maxapp.cpp=C:\Users\grafn\OneDrive\Документы\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.562,=C:\cpp\Max\Win32\Debug\maxdll.lib</Transaction>
+  </Transactions>
+</BorlandProject>
