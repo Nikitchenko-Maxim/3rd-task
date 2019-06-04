@@ -8,5 +8,6 @@ using namespace std;
 
 int MyName(){
 	cout << "Nikitchenko Maksim RI-541216" << endl;
+    cout << "GIT testing" << endl;
 	return 1;
 }
